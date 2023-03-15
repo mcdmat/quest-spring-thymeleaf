@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
 <head>
     <title>Doctor Secret Room</title>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
@@ -8,8 +8,8 @@
 <body>
 <header th:replace="index :: top">Header TODO</header>
 <section>
-    <h1 th:text="${name}">Welcome $doctorname</h1>
-    <h3 th:text="${number}">Your number is $docotornumber</h3>
+    <h1 th:text="|Welcome ${name}!|">Welcome $doctorname</h1>
+    <h3 th:text="|Your number is ${number}.|">Your number is $docotornumber</h3>
 </section>
 <footer th:replace="index :: bottom">Footer TODO</footer>
 </body>
